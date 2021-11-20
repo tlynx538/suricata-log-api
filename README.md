@@ -1,7 +1,5 @@
 # Suricata Log API
-
-## 
-
+## Purpose:
 This API allows Suricata's eve.json data to be accesible to multiple frotend interfaces.
 ## Usage: 
 ``` npm install ``` - installs the packages required by the API
