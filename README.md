@@ -2,6 +2,7 @@
 
 ## 
 
+This API allows Suricata's eve.json data to be accesible to multiple frotend interfaces.
 ## Usage: 
 ``` npm install ``` - installs the packages required by the API
 
@@ -9,7 +10,7 @@ To run this API, make sure suricata service is running
 
 ``` 
 On Linux: systemctl status suricata
-### Sample Output
+### Sample Output ###
 ● suricata.service - LSB: Next Generation IDS/IPS
      Loaded: loaded (/etc/init.d/suricata; generated)
      Active: active (running) since Fri 2021-11-19 14:47:28 UTC; 15h ago
@@ -26,6 +27,7 @@ Nov 19 14:47:28 nds-server1 systemd[1]: Started LSB: Next Generation IDS/IPS.
 If not, run ```systemctl start suricata```
 
 Once after Suricata runs, run the following:
+
 ```npm start``` - this will start the API/web server on http://your-ip-address:8000 
 
 ## Current API routes:
