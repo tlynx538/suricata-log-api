@@ -1,17 +1,12 @@
 # Suricata Log API
 ## Purpose:
 This API allows Suricata's eve.json data to be accesible to multiple frotend interfaces.
-## Usage: 
-``` cd <to-your-directory->```
+## Prerequisites:
+To run this API, make sure suricata service is installed and running:
+If your machine uses Linux then run ``` sudo systemctl status suricata```.
 
-``` git clone https://github.com/tlynx538/suricata-log-api.git ```
-
-``` npm install ``` - installs the packages required by the API
-
-To run this API, make sure suricata service is running
-
+If the output is similar to one shown below, then you're good to go. 
 ``` 
-On Linux: sudo systemctl status suricata
 ### Sample Output ###
 ● suricata.service - LSB: Next Generation IDS/IPS
      Loaded: loaded (/etc/init.d/suricata; generated)
@@ -26,10 +21,20 @@ Nov 19 14:47:26 nds-server1 systemd[1]: Starting LSB: Next Generation IDS/IPS...
 Nov 19 14:47:28 nds-server1 suricata[774]: Starting suricata in IDS (af-packet) mode... done.
 Nov 19 14:47:28 nds-server1 systemd[1]: Started LSB: Next Generation IDS/IPS.
 ```
-If not, run ```sudo systemctl start suricata```
+If not, run ```sudo systemctl start suricata``` incase if suricata isn't running.
+## Installation: 
 
-Once after Suricata runs, run the following:
+1. Clone this repo to your local machine  
+``` git clone https://github.com/tlynx538/suricata-log-api.git ``` - 
 
+2. Change Directory  
+``` cd suricata-log-api```
+
+
+3. installs the packages required by the API  
+``` npm install ```
+
+## Run the API
 ```npm start``` - this will start the API/web server on http://your-ip-address:8000 
 
 ## Current API routes:
