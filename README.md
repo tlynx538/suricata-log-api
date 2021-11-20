@@ -1,13 +1,13 @@
 # Suricata Log API
 ## Purpose:
-This API allows Suricata's eve.json data to be accesible to multiple frotend interfaces.
+This API allows Suricata's eve.json data to be accesible from multiple frontend interfaces.
 ## Prerequisites:
 To run this API, make sure suricata service is installed and running:
 If your machine uses Linux then run ``` sudo systemctl status suricata```.
 
 If the output is similar to one shown below, then you're good to go. 
-``` 
 ### Sample Output ###
+``` 
 ● suricata.service - LSB: Next Generation IDS/IPS
      Loaded: loaded (/etc/init.d/suricata; generated)
      Active: active (running) since Fri 2021-11-19 14:47:28 UTC; 15h ago
@@ -38,8 +38,8 @@ If not, run ```sudo systemctl start suricata``` incase if suricata isn't running
 ```npm start``` - this will start the API/web server on http://your-ip-address:8000 
 
 ## Current API routes:
-http://your-ip-address:8000/all - shows the EVE JSON output containing outputs alerts, anomalies, metadata, file info and protocol specific records.
+- http://your-ip-address:8000/all - shows the EVE JSON output containing outputs alerts, anomalies, metadata, file info and protocol specific records.
 
-The JSON array is updated if and only if this API Endpoint is called.
+Note: The JSON array is updated if and only if these API Endpoints are called.
 
 --- Under Construction --
