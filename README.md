@@ -2,7 +2,7 @@
 ## Purpose:
 This API allows Suricata's eve.json data to be accesible from multiple frontend interfaces.
 ## Prerequisites:
-To run this API, make sure suricata service is installed and running:
+To run this API, make sure suricata service is installed and running:  
 If your machine uses Linux then run ``` sudo systemctl status suricata```.
 
 If the output is similar to one shown below, then you're good to go. 
