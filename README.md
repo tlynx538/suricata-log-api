@@ -2,12 +2,16 @@
 ## Purpose:
 This API allows Suricata's eve.json data to be accesible to multiple frotend interfaces.
 ## Usage: 
+``` cd <to-your-directory->```
+
+``` git clone https://github.com/tlynx538/suricata-log-api.git ```
+
 ``` npm install ``` - installs the packages required by the API
 
 To run this API, make sure suricata service is running
 
 ``` 
-On Linux: systemctl status suricata
+On Linux: sudo systemctl status suricata
 ### Sample Output ###
 ● suricata.service - LSB: Next Generation IDS/IPS
      Loaded: loaded (/etc/init.d/suricata; generated)
@@ -22,7 +26,7 @@ Nov 19 14:47:26 nds-server1 systemd[1]: Starting LSB: Next Generation IDS/IPS...
 Nov 19 14:47:28 nds-server1 suricata[774]: Starting suricata in IDS (af-packet) mode... done.
 Nov 19 14:47:28 nds-server1 systemd[1]: Started LSB: Next Generation IDS/IPS.
 ```
-If not, run ```systemctl start suricata```
+If not, run ```sudo systemctl start suricata```
 
 Once after Suricata runs, run the following:
 
